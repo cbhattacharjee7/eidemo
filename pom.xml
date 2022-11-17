@@ -45,7 +45,7 @@
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>${env}</environment>
 
-						<applicationName>${appname}</applicationName>
+						<applicationName>eidemo</applicationName>
 
 						<businessGroup>${business}</businessGroup>
 
