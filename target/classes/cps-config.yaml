@@ -1,0 +1,6 @@
+cps:
+  prefix:"uat"
+  configServerBaseUrl:"https://ei-sapi-aws-config-property-uat-v2.us-w2.cloudhub.io/api/v2"
+  clientSecret:"C46843688b9147A0b87B56DCf512483B"
+  projectName:"hackathon-non-secure"
+  clientId:"d7fb951a6bb344a0bb8882ffa09c0d89"

@@ -1,0 +1,28 @@
+{
+  "configs": [
+    "hackathon-deploy-demo.xml"
+  ],
+  "secureProperties": [
+    "cps.clientSecret"
+  ],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:hackathon-deploy-demo:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.4.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "log4j2.xml",
+        "hackathon-deploy-demo.xml",
+        "cps-config.yaml",
+        "cps-config.properties"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
