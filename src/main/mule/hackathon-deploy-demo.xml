@@ -15,11 +15,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 		<db:generic-connection url="jdbc:derby://localhost:1527/memory:training" driverClassName="org.apache.derby.jdbc.ClientDriver"/>
 	</db:config>
 	<flow name="hackathon-deploy-demoFlow" doc:id="e515a5e2-a5e7-4f9c-a7e5-b491006a64b4" >
-		<scheduler doc:name="Scheduler" doc:id="cd2edb42-257b-4d6d-a508-28a6b2a136cb" >
-			<scheduling-strategy >
-				<fixed-frequency frequency="1" timeUnit="MINUTES"/>
-			</scheduling-strategy>
-		</scheduler>
+		<http:listener doc:name="Listener" doc:id="6b0715c9-60f0-458b-ba86-4de8dcbd2855" config-ref="HTTP_Listener_config" path="/ei"/>
 		<set-variable value="${in.name}" doc:name="Set Variable" doc:id="f7e448b3-0b49-4b0a-8de7-962a48ce2314" variableName="name"/>
 		<db:select doc:name="Select" doc:id="8429e07d-262f-43c3-9c58-3e200ea01d60" config-ref="Database_Config" target="dbResp">
 			<db:sql ><![CDATA[SELECT * FROM american]]></db:sql>
