@@ -34,7 +34,7 @@
 
 						<uri>https://anypoint.mulesoft.com</uri>
 
-						<muleVersion>${mule.version}</muleVersion>
+						<muleVersion>4.4.0</muleVersion>
 						<!-- 
 						<username>${anypoint.username}</username>
 
@@ -43,13 +43,13 @@
 						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
 						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<environment>${env}</environment>
+						<environment>Sandbox</environment>
 
 						<applicationName>eidemo</applicationName>
 
-						<businessGroup>${business}</businessGroup>
+						<businessGroup>DEMO-VOICE</businessGroup>
 
-						<workerType>${vCore}</workerType>
+						<workerType>Micro</workerType>
 
 						<workers>${workers}</workers>
 
